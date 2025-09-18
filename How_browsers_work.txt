@@ -1,0 +1,31 @@
+Type URL in Browser
+│
+├── 1. DNS Lookup
+│     └─ Convert domain to IP address
+│
+├── 2. TCP Connection
+│     └─ Establish connection to server (3-way handshake)
+│
+├── 3. TLS Handshake (if HTTPS)
+│     └─ Secure connection setup (encryption)
+│
+├── 4. Send HTTP Request
+│     └─ Request page or resource from server
+│
+├── 5. Server Processes Request
+│     └─ Backend logic, database, etc.
+│
+├── 6. Server Sends HTTP Response
+│     └─ HTML, CSS, JS, images, etc.
+│
+├── 7. Browser Receives Response
+│     ├─ Parses HTML → Builds DOM
+│     ├─ Parses CSS → Builds CSSOM
+│     ├─ Executes JavaScript
+│     ├─ Builds Render Tree (DOM + CSSOM)
+│     ├─ Layout (calculate positions)
+│     ├─ Paint (draw pixels)
+│     └─ Composite Layers (final rendering)
+│
+└── 8. Page is Displayed & Interactive
+      └─ User interacts, events fired, JS updates DOM
