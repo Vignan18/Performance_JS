@@ -1,0 +1,14 @@
+| Hint             | Purpose                               | When to Use               |
+| ---------------- | ------------------------------------- | ------------------------- |
+| **dns-prefetch** | Resolve DNS early                     | Might use a domain        |
+| **preconnect**   | DNS + TCP + TLS handshake early       | Will use a domain soon    |
+| **prefetch**     | Fetch a resource for *future use*     | Likely needed next page   |
+| **preload**      | Fetch a resource *now, high priority* | Critical for current page |
+
+  dns-prefetch = Ask for the address in advance
+
+preconnect = Travel to the house and ring the doorbell early
+
+prefetch = Order something for tomorrow, low priority
+
+preload = Order something urgently for today, high priority
