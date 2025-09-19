@@ -1,0 +1,68 @@
+1. ⚡ What is Latency?
+
+Delay between request & response
+
+Initial Request: Higher latency due to:
+
+DNS lookup
+
+TCP handshake
+
+TLS negotiation
+
+Subsequent Requests: Lower latency (persistent connection)
+
+Impact: More requests = more total latency
+
+2. 🌐 Types of Latency
+
+Network Latency: Delay in data transmission (round-trip time)
+
+Disk Latency: Server delay in responding to a request
+
+3. 🛠️ Network Throttling (Emulation)
+
+Use Developer Tools → Throttling Options:
+
+Emulate slow networks (2G, 3G, etc.)
+
+Simulates: Download speed, upload speed, min latency
+
+Network Type	Download	Upload	Min Latency
+GPRS	50 kbps	20 kbps	500 ms
+Regular 2G	250 kbps	50 kbps	300 ms
+Good 2G	450 kbps	150 kbps	150 ms
+Regular 3G	750 kbps	250 kbps	100 ms
+Good 3G	1.5 Mbps	750 kbps	40 ms
+Regular 4G	4 Mbps	3 Mbps	20 ms
+DSL	2 Mbps	1 Mbps	5 ms
+Wi-Fi	30 Mbps	15 Mbps	2 ms
+4. ⏱️ Network Timings (in DevTools)
+
+Blocked: Waiting for connection slot
+
+DNS: Hostname resolution time
+
+Connecting: TCP handshake duration
+
+TLS Handshake: Time to establish secure connection
+
+Sending: Time to send HTTP request
+
+Waiting: Server processing (disk latency)
+
+Receiving: Time to download asset (file size + bandwidth)
+
+5. 📏 Measuring Latency
+
+Network Latency: Round trip delay (request + response)
+
+Disk Latency: Time for server to process & send response
+
+6. 🎯 Why Reducing Latency Matters
+
+Faster user experience
+
+Better performance on poor connections
+
+Essential for global accessibility
