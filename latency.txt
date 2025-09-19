@@ -66,3 +66,6 @@ Faster user experience
 Better performance on poor connections
 
 Essential for global accessibility
+
+
+
